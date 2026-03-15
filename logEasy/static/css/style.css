@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: first center;
+}
+
+.form_recebimento {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    align-items: baseline;
+    height: 300px;
+    background-color: aqua;
+    padding: 20px;
+    
+}
+
+p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px 0px 20px;
+}
+
+
+h1 {
+    background-color: aqua;
+    height: 50px;
+}
+
+#box_menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    margin: 50px;
+    width: 400px;
+    height: 600px;
+    border: solid;
+
+}
+
+.box_app {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    text-align: center;
+    align-items: baseline;
+    height: 300px;
+    width: 50%;
+    padding: 20px;
+    border: solid;
+
+}
+
+.opcao_menu {
+    text-decoration: none;
+    font-style: none;
+    margin: 5px;
+    border: solid;
+    padding: 10px;
+    color: black;
+}
+
+#botoes_form {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    
+}
+.botao_link {
+    text-decoration: none;
+    color: black;
+}
