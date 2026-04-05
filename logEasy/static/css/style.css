@@ -78,7 +78,14 @@ h1 {
     text-align: center;
     
 }
+
 .botao_link {
     text-decoration: none;
     color: black;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: solid black;
+    padding: 10px;
 }
