@@ -34,7 +34,13 @@
             {% endfor %}
         </tbody>
     </table>
-    <a href="/">Voltar</a>
-    <a href="">Delete</a>
+    <div class="form_localizar">
+        <label for="">Localizar: </label>
+        <input type="text" id="id_localizar">
+        <button type="submit" id="botao_localizar">...</button>
+        <a href="/">Voltar</a>
+    </div>
+
+    <script src="{% static 'js/scripts2.js' %}"></script>
 </body>
 </html>

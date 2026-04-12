@@ -5,6 +5,9 @@ const botao_redirect = document.getElementById('botao_redirect')
 const campo_nome = document.getElementById('id_nome_produto')
 const codigo = document.getElementById('id_codigo')
 const quantidade = document.getElementById('id_quantidade')
+let linha_produto = document.getElementsByTagName('td')
+const localizar = document.getElementById('id_localizar')
+const botao_localizar = document.getElementById('botao_localizar')
 
 const form_enviado = () => {
     window.alert('O produto foi registrado!')
@@ -29,6 +32,29 @@ const valida = () => {
         }
     }
 }
+
+
+botao_localizar.addEventListener('click', (e) => {
+
+    const texto = localizar.value
+    for(let i = 0; i < linha_produto.length; i++){
+        nome_prod = linha_produto[1].textContent.trim()
+        if(texto == nome_prod){
+            console.log(texto)
+            linha_produto[i].style.backgroundColor = "aqua"
+            setTimeout(() => {
+                linha_produto[i].style.backgroundColor = "white"
+            }, 1000)
+        }
+    }   
+    
+})
+
+console.log(linha_produto)
+
+
+
+
 
 
 

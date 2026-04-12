@@ -88,4 +88,6 @@ table, th, td {
     border-collapse: collapse;
     border: solid black;
     padding: 10px;
+    text-align: center;
 }
+
