@@ -1,37 +1,24 @@
-console.log('Olá mundo!')
 
-let botao_salvar = document.getElementById('botao_salvar')
-const botao_redirect = document.getElementById('botao_redirect')
-const campo_nome = document.getElementById('id_nome_produto')
-const codigo = document.getElementById('id_codigo')
-const quantidade = document.getElementById('id_quantidade')
-
-const form_enviado = () => {
-    window.alert('O produto foi registrado!')
-}
+let linha_produto = document.getElementsByTagName('td')
+const localizar = document.getElementById('id_localizar')
+const botao_localizar = document.getElementById('botao_localizar')
 
 
-// Função que valida se o nome do produto foi registrado no input
-const valida = () => {
-    if (campo_nome.value == '' ) {
-        console.log('vazio')
-    }
-    else {
-        console.log(campo_nome.value)
-        if (codigo.value && quantidade.value != 0 && botao_salvar.type != 'button') {
-            //Evento que dispara um alert para informar que o produto foi registrado
-            botao_salvar.type = 'submit'
-            botao_salvar.addEventListener('click', form_enviado)
+
+botao_localizar.addEventListener('click', (e) => {
+
+    const texto = localizar.value
+    for(let i = 0; i < linha_produto.length; i++){
+        nome_prod = linha_produto[i].textContent.trim()
+        if(texto == nome_prod){
+            console.log(texto)
+            linha_produto[i].style.backgroundColor = "aqua"
+            setTimeout(() => {
+                linha_produto[i].style.backgroundColor = "white"
+            }, 1000)
         }
-        else{
-            botao_salvar.type = 'submit'
-            console.log('Código e quantidade não podem ter o valor zerado!')
-        }
-    }
-}
+    }   
+    
+})
 
 
-
-campo_nome.addEventListener('input', valida)
-codigo.addEventListener('input', valida)
-quantidade.addEventListener('input', valida)

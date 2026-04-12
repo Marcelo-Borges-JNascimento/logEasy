@@ -34,30 +34,7 @@ const valida = () => {
 }
 
 
-botao_localizar.addEventListener('click', (e) => {
-
-    const texto = localizar.value
-    for(let i = 0; i < linha_produto.length; i++){
-        nome_prod = linha_produto[1].textContent.trim()
-        if(texto == nome_prod){
-            console.log(texto)
-            linha_produto[i].style.backgroundColor = "aqua"
-            setTimeout(() => {
-                linha_produto[i].style.backgroundColor = "white"
-            }, 1000)
-        }
-    }   
-    
-})
-
-console.log(linha_produto)
-
-
-
-
-
-
-
 campo_nome.addEventListener('input', valida)
 codigo.addEventListener('input', valida)
 quantidade.addEventListener('input', valida)
+
