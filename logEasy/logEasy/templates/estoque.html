@@ -19,6 +19,7 @@
                 <th>Quantidade</th>
             </tr>
         </thead>
+        </thead>
         <tbody>
             {% for produto in produtos %}
             <tr>
@@ -26,6 +27,9 @@
                 <td>{{ produto.nome_produto }} </td>
                 <td>{{ produto.codigo }} </td>
                 <td>{{ produto.quantidade }} </td>
+                <td>
+                    <a href="{% url 'editar_produto' produto.id %}">Editar</a>
+                </td>
             </tr>
             {% empty %}
             <tr>
