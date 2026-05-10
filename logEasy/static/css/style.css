@@ -71,7 +71,7 @@ h1 {
     color: black;
 }
 
-#botoes_form {
+.botoes_form {
     text-decoration: none;
     display: grid;
     grid-template-columns: 1fr 1fr;

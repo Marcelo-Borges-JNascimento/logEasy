@@ -1,20 +1,26 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar</title>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
 </head>
 <body>
     <h1>Editando: {{ produto.nome }}</h1>
 
-    <form method="POST">
+    <form method="POST" class="form_recebimento">
         {% csrf_token %}
 
         {{ form.as_p }}
-
-        <button type="submit"> Salvar </button>
-        <a href="{% url 'listar_produto' %}"> Cancelar </a>
+        <div class="botoes_form">
+            <button type="submit" id="salvar_bt"> Salvar </button>
+            <a class="botao_link" id="botao_link" href="{% url 'listar_produto' %}"> Cancelar </a>
+        </div>    
     </form>
+    
+    <script src="{% static 'js/scripts3.js' %}"></script>
 </body>
 </html>
