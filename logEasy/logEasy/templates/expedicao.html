@@ -1,23 +1,23 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedição</title>
     <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
-    <title>Estoque</title>
 </head>
 <body>
-    <h1>Estoque</h1>
-    <table id="tabela_produtos">
+    <h1>Expedição</h1>
+    <table id="tabela_produto">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Codigo</th>
                 <th>Quantidade</th>
-                <th>Departamento</th>
+                <th>Qnt de Saída</th>
             </tr>
         </thead>
         </thead>
@@ -28,25 +28,28 @@
                 <td>{{ produto.nome_produto }} </td>
                 <td>{{ produto.codigo }} </td>
                 <td>{{ produto.quantidade }} </td>
-                <td>{{ produto.departamento }}</td>
+                <form action="{% url 'dar_saida' produto.id %}" method="POST">
+                {% csrf_token %}
                 <td>
-                    <a href="{% url 'editar_produto' produto.id %}">Editar</a>
+                    <input type="number" name="qnt_saida" min="1" max="{{ produto.quantidade }}" required>
                 </td>
+                <td>
+                    <button type="submit">Dar saída</button>
+                </td>
+            </form>
             </tr>
             {% empty %}
             <tr>
                 <td colspan="4">Nenhum produto encontrado.</td>
             </tr>
             {% endfor %}
+            
         </tbody>
     </table>
-    <div class="form_localizar">
-        <label for="">Localizar: </label>
-        <input type="text" id="id_localizar">
-        <button type="submit" id="botao_localizar">...</button>
-        <a href="/">Voltar</a>
-    </div>
-
-    <script src="{% static 'js/scripts.js' %}"></script>
+    <a href="/">Página Inicial</a>
 </body>
 </html>
+
+<!-- A página deve renderizar os itens em tempo real
+ A função excluir deve poder diminuír a quantidade de itens, e caso for 0, o sistema deve excluir automaticamente esse item 
+ -->
