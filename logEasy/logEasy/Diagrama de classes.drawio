@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="3Ag05ULP-aUDfxnL3WQq">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qkCSNA5-fKhISp6jODu2-5" edge="1" parent="1" source="qkCSNA5-fKhISp6jODu2-7" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=-0.019;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.932;exitDx=0;exitDy=0;exitPerimeter=0;" value="*">
+          <mxGeometry height="50" relative="1" width="50" x="0.9238" y="12" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="490" y="352" />
+            </Array>
+            <mxPoint x="300" y="350" as="sourcePoint" />
+            <mxPoint x="550" y="351.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-18" connectable="0" parent="qkCSNA5-fKhISp6jODu2-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8384" y="-1" as="geometry">
+            <mxPoint x="-11" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Departamento&lt;/span&gt;" vertex="1">
+          <mxGeometry height="128" width="160" x="130" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-7" parent="qkCSNA5-fKhISp6jODu2-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: center;&quot;&gt;- id: Integer&lt;/span&gt;&lt;br style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;- nome: String&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-8" parent="qkCSNA5-fKhISp6jODu2-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-9" parent="qkCSNA5-fKhISp6jODu2-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: center;&quot;&gt;+ __str__(): String&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="160" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Produtos" vertex="1">
+          <mxGeometry height="144" width="160" x="550" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-11" parent="qkCSNA5-fKhISp6jODu2-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;nbsp;- id: Integer &lt;/div&gt;&lt;div&gt;&amp;nbsp;- nome_produto: String&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- codigo: Integer&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- quantidade: Integer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="84" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-12" parent="qkCSNA5-fKhISp6jODu2-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-13" parent="qkCSNA5-fKhISp6jODu2-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: center;&quot;&gt;+ __str__(): String&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="26" width="160" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-14" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="HistoricoExpedicao  " vertex="1">
+          <mxGeometry height="174" width="500" x="180" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-15" parent="qkCSNA5-fKhISp6jODu2-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: Integer&amp;nbsp;&lt;br&gt;- produto_nome: String&amp;nbsp;&lt;br&gt;- codigo_produto: Integer&amp;nbsp;&lt;br&gt;- departamento_nome: String&amp;nbsp;&lt;br&gt;- quantidade_retirada: Integer&amp;nbsp;&lt;br&gt;- data_saida: DateTime&amp;nbsp;" vertex="1">
+          <mxGeometry height="114" width="500" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-16" parent="qkCSNA5-fKhISp6jODu2-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="500" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qkCSNA5-fKhISp6jODu2-17" parent="qkCSNA5-fKhISp6jODu2-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: center;&quot;&gt;+ __str__(): String&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="26" width="500" y="148" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
